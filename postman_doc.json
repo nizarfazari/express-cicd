@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "435d7478-a6b3-40c7-8b4a-3d54514e50ec",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25494097"
+	},
+	"item": [
+		{
+			"name": "Get Cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{baseUrl}}/api/v1/cars"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Card By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{baseUrl}}/api/v1/cars/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Cars",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "size",
+							"value": "small",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "SADA",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "asdasd",
+							"type": "text"
+						},
+						{
+							"key": "start_rent",
+							"value": "20-12-2002",
+							"type": "text"
+						},
+						{
+							"key": "finish_rent",
+							"value": "20-12-2002",
+							"type": "text"
+						},
+						{
+							"key": "image_url",
+							"type": "file",
+							"src": "postman-cloud:///1ef0c69f-bc22-49c0-875d-42b08b2234aa"
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/cars",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cars"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Cars",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "asdas",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{baseUrl}}/api/v1/cars/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Cars",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{baseUrl}}/api/v1/cars/1"
+			},
+			"response": []
+		}
+	]
+}
